@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            background-image: ;}
+
+        #loginContainer {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        #loginContainer img {
+            max-width: 100%;
+            max-height: 100vh;
+        }
+
+        #loginForm {
+            margin-top: 20px;
+        }
+
+        input {
+            padding: 8px;
+            margin: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div id="loginContainer">
+    <img src="https://img.wattpad.com/01c1bd36d719899874307eaef9503cf05da30101/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f326e63714354776232485a4f37773d3d2d3133352e3136346463646130383663356138333439393037313035373935302e676966" alt="Animated GIF">
+    <div class="form-group">
+        <label for="dropdown"></label>
+        <select class="form-control" id="dropdown">
+            <option value="option1">Youtube</option>
+            <option value="option2">Instagram</option>
+            <option value="option3">Facebook</option>
+        </select>
+        <p class="mt-3">You Will Be Redirected To Youtube Only </p>
+
+        </select>
+        <form id="loginForm">
+            <input type="text" placeholder="Username" name="username" required>
+            <br>
+            <input type="password" placeholder="Password" name="password" required>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+
+</body>
+</html>

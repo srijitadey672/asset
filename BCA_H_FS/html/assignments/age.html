@@ -1,0 +1,143 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">-->
+<!--    <title>Home</title>-->
+<!--    <link rel="stylesheet" type="text/css" href="age.css">-->
+
+
+<!--</head>-->
+<!--<body >-->
+<!--<div class="text-box">-->
+<!--    <div class="fixed-text">KNOW YOUR</div>-->
+<!--    <div class="animate-text">-->
+<!--        <div>-->
+
+<!--            <span> AGE</span>-->
+<!--            <span>STAGE OF LIFE</span>-->
+<!--            <span>CENTURY</span>-->
+
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div class="age-calculate">-->
+<!--    <h1>Age Calculator</h1>-->
+<!--    <input type="date" id="birth_date" name="">-->
+<!--    <button id="calculate">Calculate</button>-->
+<!--    <div id="calculateAge"></div>-->
+<!--</div>-->
+<!--<script type="text/javascript" src="age.js"></script>-->
+<!--</body>-->
+<!--</html>-->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Age Calculator</title>-->
+<!--    <link rel="stylesheet" type="text/css" href="age.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--<div id="calculator">-->
+<!--    <h2>Age Calculator</h2>-->
+<!--    <input type="date" id="dob" placeholder="Enter your Date of Birth">-->
+<!--    <input type="button" value="Calculate Age" onclick="calculateAge()">-->
+<!--    <div id="result"></div>-->
+<!--</div>-->
+
+<!--<script src="age.js"></script>-->
+<!--</body>-->
+<!--</html>-->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Age Calculator</title>-->
+<!--    <link rel="stylesheet" href="age.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="background">-->
+<!--    <div></div>-->
+<!--    <div></div>-->
+<!--    <div></div>-->
+<!--    <div></div>-->
+<!--</div>-->
+<!--<div id="calculator">-->
+<!--    <h2>Age Calculator</h2>-->
+<!--    <input type="date" id="dob" placeholder="Enter your Date of Birth">-->
+<!--    <input type="button" value="Calculate Age" onclick="calculateAge()">-->
+<!--    <div id="result"></div>-->
+<!--</div>-->
+<!--<div class="typing-animation">-->
+<!--    <span id="typing-text">Calculate your age with ease...</span>-->
+<!--</div>-->
+<!--<script src="age.js"></script>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        input {
+            padding: 10px;
+            margin: 5px;
+            width: 200px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Age Calculator</h2>
+    <input type="date" id="birthDate" placeholder="Enter your birthdate">
+    <br>
+    <button onclick="calculateAge()">Calculate Age</button>
+    <br>
+    <p id="result"></p>
+</div>
+
+<script>
+    function calculateAge() {
+        var birthDate = document.getElementById("birthDate").value;
+        var today = new Date();
+        var birthDateObj = new Date(birthDate);
+        var age = today.getFullYear() - birthDateObj.getFullYear();
+        var monthDiff = today.getMonth() - birthDateObj.getMonth();
+        if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDateObj.getDate())) {
+            age--;
+        }
+        document.getElementById("result").innerText = "Your age is " + age + " years.";
+    }
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,280 @@
+/*!*body {*!*/
+/*!*    font-family: Arial, sans-serif;*!*/
+/*!*    margin: 0;*!*/
+/*!*    padding: 0;*!*/
+/*!*}*!*/
+
+/*!*.container {*!*/
+/*!*    max-width: 760px; !* Considering 20px padding on both sides *!*!*/
+/*!*    margin: 0 auto;*!*/
+/*!*    padding: 20px;*!*/
+/*!*}*!*/
+
+/*!*.input-field,*!*/
+/*!*.dropdown {*!*/
+/*!*    width: 100%;*!*/
+/*!*    padding: 10px;*!*/
+/*!*    margin-bottom: 10px;*!*/
+/*!*    box-sizing: border-box;*!*/
+/*!*}*!*/
+
+/*!*.custom-dropdown {*!*/
+/*!*    position: relative;*!*/
+/*!*    width: 100%;*!*/
+/*!*}*!*/
+
+/*!*.dropdown {*!*/
+/*!*    width: 100%;*!*/
+/*!*    padding: 10px;*!*/
+/*!*    margin-bottom: 10px;*!*/
+/*!*    background-color: #f5f5f5;*!*/
+/*!*    border: 1px solid #ccc;*!*/
+/*!*    border-radius: 5px;*!*/
+/*!*    cursor: pointer;*!*/
+/*!*}*!*/
+
+/*!*.dropdown-icon {*!*/
+/*!*    position: absolute;*!*/
+/*!*    top: 50%;*!*/
+/*!*    right: 10px;*!*/
+/*!*    margin-top: -0.5em; !* Adjust this value according to the height of your dropdown icon *!*!*/
+/*!*}*!*/
+
+/*!*.responsive-img {*!*/
+/*!*    max-width: 100%;*!*/
+/*!*    height: auto;*!*/
+/*!*    display: block;*!*/
+/*!*    margin: 0 auto;*!*/
+/*!*    margin-bottom: 20px;*!*/
+/*!*}*!*/
+
+/*!*p {*!*/
+/*!*    margin-bottom: 20px;*!*/
+/*!*}*!*/
+/*!*body {*!*/
+/*!*    font-family: Arial, sans-serif;*!*/
+/*!*    margin: 0;*!*/
+/*!*    padding: 0;*!*/
+/*!*}*!*/
+
+/*!*.container {*!*/
+/*!*    max-width: 760px; !* Considering 20px padding on both sides *!*!*/
+/*!*    margin: 0 auto;*!*/
+/*!*    padding: 20px;*!*/
+/*!*}*!*/
+
+/*!*.input-field,*!*/
+/*!*.dropdown {*!*/
+/*!*    width: 100%;*!*/
+/*!*    padding: 10px;*!*/
+/*!*    margin-bottom: 10px;*!*/
+/*!*    box-sizing: border-box;*!*/
+/*!*}*!*/
+
+/*!*.custom-dropdown {*!*/
+/*!*    position: relative;*!*/
+/*!*    width: 100%;*!*/
+/*!*}*!*/
+
+/*!*.dropdown {*!*/
+/*!*    width: 100%;*!*/
+/*!*    padding: 10px;*!*/
+/*!*    margin-bottom: 10px;*!*/
+/*!*    background-color: #f5f5f5;*!*/
+/*!*    border: 1px solid #ccc;*!*/
+/*!*    border-radius: 5px;*!*/
+/*!*    cursor: pointer;*!*/
+/*!*    appearance: none; !* Remove default dropdown arrow *!*!*/
+/*!*}*!*/
+
+/*!*.dropdown-icon {*!*/
+/*!*    position: absolute;*!*/
+/*!*    top: 50%;*!*/
+/*!*    right: 10px;*!*/
+/*!*    margin-top: -0.5em; !* Adjust this value according to the height of your dropdown icon *!*!*/
+/*!*}*!*/
+
+/*!*!* Hover effect *!*!*/
+/*!*.dropdown:hover {*!*/
+/*!*    background-color: #e0e0e0;*!*/
+/*!*}*!*/
+
+/*!*!* Focus effect *!*!*/
+/*!*.dropdown:focus {*!*/
+/*!*    outline: none;*!*/
+/*!*    border-color: #007bff; !* Adjust color as needed *!*!*/
+/*!*    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);*!*/
+/*!*}*!*/
+
+/*!*!* Styled dropdown arrow *!*!*/
+/*!*.custom-dropdown::after {*!*/
+/*!*    content: '▼';*!*/
+/*!*    position: absolute;*!*/
+/*!*    top: 50%;*!*/
+/*!*    right: 10px;*!*/
+/*!*    transform: translateY(-50%);*!*/
+/*!*}*!*/
+
+/*!*.responsive-img {*!*/
+/*!*    max-width: 100%;*!*/
+/*!*    height: auto;*!*/
+/*!*    display: block;*!*/
+/*!*    margin: 0 auto;*!*/
+/*!*    margin-bottom: 20px;*!*/
+/*!*}*!*/
+
+/*!*p {*!*/
+/*!*    margin-bottom: 20px;*!*/
+/*!*}*!*/
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
+/*}*/
+
+/*.container {*/
+/*    display: flex;*/
+/*    font-size: 14px;*/
+/*    height: 100vh;*/
+/*    background: #d8d8d8;*/
+/*}*/
+
+/*.navbar {*/
+/*    margin: auto;*/
+/*    padding: 0.5rem 1.5rem;*/
+/*    background: #fff;*/
+/*    border-radius: 1rem;*/
+/*    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);*/
+/*}*/
+
+/*.nav-links {*/
+/*    display: flex;*/
+/*    gap: 2rem;*/
+/*}*/
+
+/*.nav-link, .drop-down li {*/
+/*    list-style: none;*/
+/*    height: 100%;*/
+/*    padding: 0.5rem 1rem;*/
+/*    font-weight: 600;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*a {*/
+/*    text-decoration: none;*/
+/*    color: currentColor;*/
+/*}*/
+
+/*.drop-down {*/
+/*    position: absolute;*/
+/*    padding: 0.5rem 0;*/
+/*    margin: 0.5rem -0.5rem;*/
+/*    background: antiquewhite;*/
+/*    color: black;*/
+/*    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);*/
+/*    border-radius: 0.5rem;*/
+/*    font-size: 12px;*/
+/*    display: none;*/
+/*}*/
+
+/*.nav-link:hover {*/
+/*    background-color: black;*/
+/*    color: #fff;*/
+/*    border-radius: 0.5rem;*/
+/*}*/
+
+/*.services:hover .drop-down {*/
+/*    display: block;*/
+/*}*/
+
+/*.services a {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.services .dropdown-icon {*/
+/*    font-size: 18px;*/
+/*    position: relative;*/
+/*    right: -5px;*/
+/*    transform: rotate(0deg);*/
+/*    transition: 0.3s ease-in-out all;*/
+/*}*/
+
+/*.services:hover .dropdown-icon {*/
+/*    transform: rotate(180deg);*/
+/*}*/
+
+/*.drop-down li:hover {*/
+/*    background: black;*/
+/*    color: #fff;*/
+/*    border-radius: 0.5rem;*/
+/*}*/
+*,*:after,*:before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.background{
+    font-family: arial;
+    font-size: 16px;
+    margin: 0;
+    background: #fff;
+    color: #000;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-image:
+            radial-gradient(circle,#ff0fd6 69%, transparent 72%),
+            radial-gradient(circle,#00ff22 69%, transparent 72%),
+            linear-gradient(to right bottom, #00b8ff, #210068);
+    background-size: 10vw 10vw, 10vw 10vw, 100% 100%;
+    background-repeat: no-repeat;
+    background-position: left top, right top, left top;
+
+    animation: bgAnim 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes bgAnim{
+    0%{
+        background-image:
+                radial-gradient(circle,#ff0fd6 69%, transparent 72%),
+                radial-gradient(circle,#00ff22 69%, transparent 72%),
+                linear-gradient(to right bottom, #00b8ff, #210068);
+        background-size: 10vw 10vw, 10vw 10vw, 100% 100%;
+        background-repeat: no-repeat;
+        background-position: -10vw -10vw, 100vw -10vw, left top;
+    }
+    35%{
+        background-image:
+                radial-gradient(circle,#ff0fd6 69%, transparent 72%),
+                radial-gradient(circle,#00ff22 69%, transparent 72%),
+                linear-gradient(to right bottom, #00b8ff, #210068);
+        background-size: 10vw 10vw, 10vw 10vw, 100% 100%;
+        background-repeat: no-repeat;
+        background-position: 30vw calc(100vh - 10vw), 60vw calc(100vh - 10vw), left top;
+    }
+    70%{
+        background-image:
+                radial-gradient(circle,#ff0fd6 69%, transparent 72%),
+                radial-gradient(circle,#00ff22 69%, transparent 72%),
+                linear-gradient(to right bottom, #00b8ff, #210068);
+        background-size: 10vw 10vw, 10vw 10vw, 100% 100%;
+        background-repeat: no-repeat;
+        background-position: 60vw 0, 30vw 0, left top;
+    }
+    100%{
+        background-image:
+                radial-gradient(circle,#ff0fd6 69%, transparent 72%),
+                radial-gradient(circle,#00ff22 69%, transparent 72%),
+                linear-gradient(to right bottom, #00b8ff, #210068);
+        background-size: 10vw 10vw, 10vw 10vw, 100% 100%;
+        background-repeat: no-repeat;
+        background-position: 100vw 100vh, -10vw 100vh, left top;
+    }
+}
+
+

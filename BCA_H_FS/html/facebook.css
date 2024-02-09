@@ -1,0 +1,45 @@
+.d1{
+    background-color: #3b5998;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -30px;
+}
+.form1{
+    margin: 50px 50px 50px 50px;
+}
+.inner_form{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+.fb_logo{
+    color: white;
+    margin: 50px 50px 50px 50px;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+}
+.pass{
+    display: flex;
+    flex-direction: column;
+}
+.login_b1{
+    height: 20px;
+    margin: 10px;
+}
+.table_left{
+    margin-top: -400px;
+
+}
+.left_side{
+    margin-left: 8%;
+    margin-top: -450px;
+}
+.left_side1{
+    margin-left: 14%;
+}
+.sign{
+    margin-top: -480px;
+    text-transform: capitalize;
+}
