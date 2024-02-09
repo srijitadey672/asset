@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px; /* Increase the width to 400px */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 40px); /* Adjust width to fit within the login box */
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color 0.3s; /* Add transition for smoother hover effect */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+.input-group label {
+    display: block;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Gradient Background Animation */
+@keyframes animatedGradientBackground {
+    0% { background-position: 0 0; }
+    50% { background-position: 100% 0; }
+    100% { background-position: 0 0; }
+}
+
+.container {
+    position: relative; /* Ensure the container is positioned relative for absolute positioning of the robot */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    animation: animatedGradientBackground 15s ease infinite;
+}
+
+/* Robot Animation */
+@keyframes animatedRobot {
+    0% { transform: translateX(-100%); } /* Move the robot outside the left edge */
+    100% { transform: translateX(100%); } /* Move the robot outside the right edge */
+}
+
+.robot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 150px; /* Adjust the size of the robot */
+    animation: animatedRobot 10s linear infinite; /* Adjust the animation duration and timing function */
+    z-index: 1; /* Ensure the robot is above the background */
+}
+
+/* Cartoon Robot SVG */
+.robot svg {
+    width: 100%;
+    height: auto;
+}
+
+/* Gradient Background */
+.gradient-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-45deg, #FFC700, #FFD900, #FFEC00, #FFF600, #FFFF00, #FFFF00, #FFEC00, #FFE000, #FFD100, #FFC200, #FFB300, #FFA500);
+    background-size: 300% 300%;
+    animation: animatedGradientBackground 15s ease infinite; /* Keep the same animation as the container */
+}

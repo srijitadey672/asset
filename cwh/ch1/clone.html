@@ -1,0 +1,1059 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <title>Myasiantv : Asian Drama - Movies and Shows</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="referrer" content="unsafe-url">
+    <meta name="revisit-after" content="1 days" />
+    <meta name="google-site-verification" content=""/>
+    <meta name="description" content="You can watch, download free and get update about latest drama releases in Korean, Taiwanese, Hong Kong, and Chinese with subtitles are in English at MyAsianTV.tv">
+    <meta name="keywords" content="drama, movies, asian, shows, drama movies, popular shows, latest releases, popular stars, Korean, Japanese, Taiwanese, Hong Kong, Chinese, MyAsianTV">
+    <meta itemprop="image" content="/"/>
+
+    <meta property="og:site_name" content="Myasiantv"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:type" content="website"/>
+    <meta property="fb:admins" content=""/>
+    <meta property="og:title" content="Myasiantv : Asian Drama - Movies and Shows"/>
+    <meta property="og:description" content="You can watch, download free and get update about latest drama releases in Korean, Taiwanese, Hong Kong, and Chinese with subtitles are in English at MyAsianTV.tv">
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content="/"/>
+    <meta property="og:image:secure_url" content="/"/>
+
+    <meta property="article:tag" content="drama, movies, asian, shows, drama movies, popular shows, latest releases, popular stars, Korean, Japanese, Taiwanese, Hong Kong, Chinese, MyAsianTV" />
+    <meta property="article:section" content="Myasiantv : Asian Drama - Movies and Shows" />
+
+    <meta property="twitter:card" content="summary"/>
+    <meta property="twitter:title" content="Myasiantv : Asian Drama - Movies and Shows"/>
+    <meta property="twitter:description" content="You can watch, download free and get update about latest drama releases in Korean, Taiwanese, Hong Kong, and Chinese with subtitles are in English at MyAsianTV.tv"/>
+
+    <link rel="canonical" href="/drama"/>
+    <link rel="alternate" hreflang="en-us" href="/drama"/>
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css?v=4.0.1" />
+    <link rel="stylesheet" type="text/css" href="/css/main.css?v=4.0.1" />
+
+    <script type="text/javascript" src="/js/global.js?v=4.0.1"></script>
+    <meta name="clckd" content="c2a56a486852b4adc58acae33d844558" />
+    <div id="bg_6212168443"></div><script data-cfasync="false" type="text/javascript" src="/ads.php?domainid=6212&sizeid=16&zoneid=8443"></script>
+</head>
+<body>
+<script>
+    var base_url = 'https://' + document.domain + '/';
+    var api_anclytic = '/anclytic.html';
+</script>
+<div id="topbar"><div class="wrapper"><div class="anna"></div></div></div>
+<div id="header" class="wrapper">
+    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+
+    <div class="logo"><a href="/" title="MyAsianTV">MyAsianTV</a></div>
+    <div class="sound"></div>
+    <div class="clear"></div>
+    <div class="navbar">
+        <div class="menu">
+            <ul class="menu_hoz">
+                <li><a class="m1" href="/" title="Home"><i class="icon-home"></i>HOME</a></li>
+                <li>
+                    <a class="m2" href="/drama" title="Korean Drama, Hong Kong Drama"><i class="icon-folder"></i>DRAMA</a>
+                </li>
+                <li><a class="m3" href="/movie" title="Hong Kong, Chinese, Japanese, Korean Movies"><i class="icon-film"></i>MOVIES</a></li>
+                <li><a class="m5" href="/shows" title="Korean Variety Shows"><i class="icon-forum"></i>SHOWS</a></li><li><a class="m5" target="_blank" href="https://www.gogoanime2.to" title="gogoanime"><i class="icon-forum"></i>Gogoanime</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <!-- form search--->
+            <div class="form">
+                <form onsubmit="" id="search-form" action="/search.html" method="get">
+                    <div class="row">
+                        <button type="submit" onclick="do_search();"></button>
+                        <input placeholder="Search ..." name="key" id="key" type="text" value="" autocomplete="off">
+                    </div>
+                    <div id="header_search_autocomplete"></div>
+                    <div class="loader" style="display: none;"></div>
+                </form>
+
+                <div class="clr"></div>
+                <div class="search-iph"><a href="javascript:void(0)"></a></div>
+            </div>
+            <div class="clr"></div>
+            <!-- /form search--->
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var hidden = true;var timer, value;
+    $('#header_search_autocomplete').mouseover(function () {
+        hidden = false;
+    });
+
+    $('#header_search_autocomplete').mouseout(function () {
+        hidden = true;
+    });
+
+    $('input[name=key]').keyup(function () {
+        $('.loader').show();
+        clearTimeout(timer);
+        var keyword = $(this).val();
+        if (keyword.trim().length >= 2 && value != keyword) {
+            timer = setTimeout(function() {
+                value = keyword;
+                $.ajax({
+                    url: base_url + "ajax/suggest_search",
+                    data: {key: keyword},
+                    success: function (data) {
+                        $('.loader').hide();
+
+                        $('#header_search_autocomplete').html(data);
+                        if (data.trim() !== '') {
+                            $('#header_search_autocomplete').show();
+                        } else {
+                            $('#header_search_autocomplete').hide();
+                        }
+                    }
+                })
+            }, 1000);
+
+        } else {
+            $('#header_search_autocomplete').hide();
+            $('.loader').hide();
+        }
+    });
+
+    $('input[name=key]').on("paste", function(event) {
+        $('.loader').show();
+        var element = $(event.target);
+        setTimeout(function() {
+            var keyword =  $(element).val();
+            $.ajax({
+                url: base_url + "ajax/suggest_search",
+                data: {key: keyword},
+                success: function (data) {
+                    $('.loader').hide();
+                    $('#header_search_autocomplete').html(data);
+
+                }
+            })
+        }, 1000);
+    });
+
+    $('input[name=key]').blur(function () {
+        console.log(hidden);
+        if (hidden) {
+            $('#header_search_autocomplete').hide();
+        }
+    });
+    $('input[name=key]').focus(function () {
+        if ($('#header_search_autocomplete').html() !== '') {
+            $('#header_search_autocomplete').show();
+        }
+    });
+
+    $('input[name=key]').keypress(function (event) {
+        if (event.which == 13) {
+            searchMovie();
+        }
+    });
+
+    function searchMovie() {
+        var keyword = $('input[name=keyword]').val();
+        if (keyword.trim() !== '') {
+            keyword = keyword.replace(/(<([^>]+)>)/ig, "-").replace(/[`~!@#$%^&*()_’|\=?;:'",.<>\{\}\[\]\\\/]/gi, "-");
+            keyword = keyword.split(" ").join("-");
+            window.location.href = base_url + 'movie/search/' + keyword;
+        }
+    }
+</script>
+<div id="content" class="wrapper">
+
+    <div id="content-left" class="content-left">
+        <h3 class="title"><i class="icon-folder"></i>Korean Drama | TW CN JP and others Drama</h3>
+        <form name="frmFilter" id="frmFilter">
+<span>
+Sort by <select class="input" name="selOrder">
+<option value="0">Default</option>
+<option value="1" >Recent release</option>
+<option value="2"  >Release year</option>
+<option value="4"  >Popular</option>
+<option value="3"  >Title</option>
+</select>
+</span>
+            <span>
+Genre <select name="selCat">
+<option value="0">Default</option>
+<option value="Accident" >Accident</option>
+<option value="Action" >Action</option>
+<option value="Adventure" >Adventure</option>
+<option value="Alien" >Alien</option>
+<option value="Amnesia" >Amnesia</option>
+<option value="Ancient legend" >Ancient legend</option>
+<option value="Animals" >Animals</option>
+<option value="Animation" >Animation</option>
+<option value="Arthouse" >Arthouse</option>
+<option value="Artificial Intelligence" >Artificial Intelligence</option>
+<option value="Award Winning" >Award Winning</option>
+<option value="Based on a Comic" >Based on a Comic</option>
+<option value="Based on True Story" >Based on True Story</option>
+<option value="Betrayal" >Betrayal</option>
+<option value="Biography" >Biography</option>
+<option value="BL" >BL</option>
+<option value="Bodyguard" >Bodyguard</option>
+<option value="Bromance" >Bromance</option>
+<option value="Business" >Business</option>
+<option value="Chambara" >Chambara</option>
+<option value="Childhood" >Childhood</option>
+<option value="Christmas" >Christmas</option>
+<option value="Cohabitation" >Cohabitation</option>
+<option value="Cold Man" >Cold Man</option>
+<option value="Coma" >Coma</option>
+<option value="Comedy" >Comedy</option>
+<option value="Concert" >Concert</option>
+<option value="Conglomerate" >Conglomerate</option>
+<option value="Conspiracy" >Conspiracy</option>
+<option value="Contract Relationship" >Contract Relationship</option>
+<option value="Corruption" >Corruption</option>
+<option value="Crime" >Crime</option>
+<option value="Criminal" >Criminal</option>
+<option value="Curse" >Curse</option>
+<option value="Dance" >Dance</option>
+<option value="Deity" >Deity</option>
+<option value="Demon" >Demon</option>
+<option value="Detective" >Detective</option>
+<option value="Disability" >Disability</option>
+<option value="Disaster" >Disaster</option>
+<option value="Documentary" >Documentary</option>
+<option value="Drama" >Drama</option>
+<option value="Eastern" >Eastern</option>
+<option value="Educational" >Educational</option>
+<option value="Entertainment" >Entertainment</option>
+<option value="Environment" >Environment</option>
+<option value="Erotica" >Erotica</option>
+<option value="Espionage" >Espionage</option>
+<option value="Exorcism" >Exorcism</option>
+<option value="Exploitation" >Exploitation</option>
+<option value="Fairy" >Fairy</option>
+<option value="Family" >Family</option>
+<option value="Fantasy" >Fantasy</option>
+<option value="Fashion" >Fashion</option>
+<option value="Food" >Food</option>
+<option value="Foreign" >Foreign</option>
+<option value="Friendship" >Friendship</option>
+<option value="Game Developer" >Game Developer</option>
+<option value="Gangster" >Gangster</option>
+<option value="Geishas" >Geishas</option>
+<option value="Gore" >Gore</option>
+<option value="Goryeo Dynasty" >Goryeo Dynasty</option>
+<option value="Grudge" >Grudge</option>
+<option value="Gumiho" >Gumiho</option>
+<option value="Harem" >Harem</option>
+<option value="Hidden Identity" >Hidden Identity</option>
+<option value="Historical" >Historical</option>
+<option value="Horror" >Horror</option>
+<option value="Hostage" >Hostage</option>
+<option value="Human" >Human</option>
+<option value="Hypnotism" >Hypnotism</option>
+<option value="Idol Drama" >Idol Drama</option>
+<option value="Indie" >Indie</option>
+<option value="Instructional" >Instructional</option>
+<option value="Investigation" >Investigation</option>
+<option value="Jidai Geki" >Jidai Geki</option>
+<option value="Josei" >Josei</option>
+<option value="Kidnapping" >Kidnapping</option>
+<option value="Kung Fu" >Kung Fu</option>
+<option value="Law" >Law</option>
+<option value="legal" >legal</option>
+<option value="Lesbian" >Lesbian</option>
+<option value="LGBTQ+" >LGBTQ+</option>
+<option value="life" >life</option>
+<option value="Love Triangle" >Love Triangle</option>
+<option value="Mafia" >Mafia</option>
+<option value="Magic" >Magic</option>
+<option value="Manga" >Manga</option>
+<option value="Manhua" >Manhua</option>
+<option value="Martial Arts" >Martial Arts</option>
+<option value="Mature" >Mature</option>
+<option value="Medical" >Medical</option>
+<option value="melodrama" >melodrama</option>
+<option value="Mermaid" >Mermaid</option>
+<option value="Military" >Military</option>
+<option value="Miniseries" >Miniseries</option>
+<option value="Misunderstanding" >Misunderstanding</option>
+<option value="Monster" >Monster</option>
+<option value="Murder" >Murder</option>
+<option value="Music" >Music</option>
+<option value="Musical" >Musical</option>
+<option value="Mystery" >Mystery</option>
+<option value="Mythology" >Mythology</option>
+<option value="Nature" >Nature</option>
+<option value="Neighbours" >Neighbours</option>
+<option value="Noir" >Noir</option>
+<option value="Novel" >Novel</option>
+<option value="Omnibus" >Omnibus</option>
+<option value="One shot" >One shot</option>
+<option value="Parody" >Parody</option>
+<option value="Phobia" >Phobia</option>
+<option value="Poison" >Poison</option>
+<option value="police" >police</option>
+<option value="political" >political</option>
+<option value="Power Struggle" >Power Struggle</option>
+<option value="Prison" >Prison</option>
+<option value="Professional" >Professional</option>
+<option value="Programmer" >Programmer</option>
+<option value="psychiatry" >psychiatry</option>
+<option value="Psychological" >Psychological</option>
+<option value="Reality" >Reality</option>
+<option value="Reality Show" >Reality Show</option>
+<option value="Reality TV" >Reality TV</option>
+<option value="Rebellion" >Rebellion</option>
+<option value="Religion" >Religion</option>
+<option value="Renzoku" >Renzoku</option>
+<option value="Republic" >Republic</option>
+<option value="Resurrection" >Resurrection</option>
+<option value="Revenge" >Revenge</option>
+<option value="Rich Man" >Rich Man</option>
+<option value="Robot" >Robot</option>
+<option value="Romance" >Romance</option>
+<option value="RPG" >RPG</option>
+<option value="Rural" >Rural</option>
+<option value="Samurai" >Samurai</option>
+<option value="Scholar" >Scholar</option>
+<option value="School" >School</option>
+<option value="Sci-fi" >Sci-fi</option>
+<option value="Seinen" >Seinen</option>
+<option value="Serial Killer" >Serial Killer</option>
+<option value="Short" >Short</option>
+<option value="Sismance" >Sismance</option>
+<option value="Sitcom" >Sitcom</option>
+<option value="Slapstick" >Slapstick</option>
+<option value="Slice of Life" >Slice of Life</option>
+<option value="Society" >Society</option>
+<option value="Soulmates" >Soulmates</option>
+<option value="Sports" >Sports</option>
+<option value="Stage Play" >Stage Play</option>
+<option value="Supernatural" >Supernatural</option>
+<option value="Survival" >Survival</option>
+<option value="Suspense" >Suspense</option>
+<option value="Swordsman" >Swordsman</option>
+<option value="Taiga drama" >Taiga drama</option>
+<option value="Teamwork" >Teamwork</option>
+<option value="Tearjerker" >Tearjerker</option>
+<option value="Teen" >Teen</option>
+<option value="Terrorist" >Terrorist</option>
+<option value="Thief" >Thief</option>
+<option value="Thriller" >Thriller</option>
+<option value="Time Travel" >Time Travel</option>
+<option value="Tokusatsu" >Tokusatsu</option>
+<option value="Tomboy" >Tomboy</option>
+<option value="Tragedy" >Tragedy</option>
+<option value="Tragic Past" >Tragic Past</option>
+<option value="Transmigration" >Transmigration</option>
+<option value="Trauma" >Trauma</option>
+<option value="Treason" >Treason</option>
+<option value="Triad" >Triad</option>
+<option value="Underworld" >Underworld</option>
+<option value="Unrequited Love" >Unrequited Love</option>
+<option value="urban drama" >urban drama</option>
+<option value="Vampire" >Vampire</option>
+<option value="Variety" >Variety</option>
+<option value="Variety show" >Variety show</option>
+<option value="War" >War</option>
+<option value="Warrior" >Warrior</option>
+<option value="Web Series" >Web Series</option>
+<option value="Webtoon" >Webtoon</option>
+<option value="Werewolf" >Werewolf</option>
+<option value="Western" >Western</option>
+<option value="Witch" >Witch</option>
+<option value="Workplace" >Workplace</option>
+<option value="Wuxia" >Wuxia</option>
+<option value="Yakuza" >Yakuza</option>
+<option value="Yaoi" >Yaoi</option>
+<option value="Youth" >Youth</option>
+<option value="Yuri" >Yuri</option>
+<option value="Zombie" >Zombie</option>
+</select>
+</span>
+            <span>
+Country <select name="selCountry">
+<option value="0">Default</option>
+<option value="6" >American</option>
+<option value="5" >Chinese</option>
+<option value="4" >Hong Kong</option>
+<option value="13" >Indian</option>
+<option value="2" >Japanese</option>
+<option value="1" >Korean</option>
+<option value="10" >Other Asia</option>
+<option value="12" >Philippine</option>
+<option value="3" >Taiwanese</option>
+<option value="11" >Thailand</option>
+</select>
+</span>
+            <span>
+Year <select name="selYear">
+<option value="0">Default</option>
+<option value="2024" >2024</option>
+ <option value="2023" >2023</option>
+ <option value="2022" >2022</option>
+ <option value="2021" >2021</option>
+ <option value="2020" >2020</option>
+ <option value="2019" >2019</option>
+ <option value="2018" >2018</option>
+ <option value="2017" >2017</option>
+ <option value="2016" >2016</option>
+ <option value="2015" >2015</option>
+ <option value="2014" >2014</option>
+ <option value="2013" >2013</option>
+ <option value="2012" >2012</option>
+ <option value="2011" >2011</option>
+ <option value="2010" >2010</option>
+ <option value="2009" >2009</option>
+ </select>
+</span>
+            <input type="submit" name="btnFilter" value="Submit">
+        </form>
+        <div id="list-1" class="list">
+            <input type="hidden" id="type" name="type" value="1" />
+            <div>
+                <ul class="items">
+                    <li>
+                        <span class="status">Upcoming</span>
+                        <a title="대홍수 / Daehongsu The Great Flood (2024) |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2024</p>
+                              	<p><strong>Genre:</strong> Action, Disaster, Drama, Sci-fi, Survival</p>
+                              	<p>A great flood has hit planet Earth. People, including An Na  and Hee Jo struggle to survive in their apartment building, which is sinking into the water. An Na is an AI development researcher and Hee Jo belongs to a human resource security team, who is trying to save An Na from the disaster. But why is Hee Jo trying to save An Na and who is behind it? </p>
+                              </div>" href="/tv-series/the-great-flood">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/the-great-flood-1659494508.png" alt="The Great Flood (2024)" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/tv-series/the-great-flood">The Great Flood (2024)</a>2024</h2>
+                    </li>
+                    <li>
+                        <span class="status">Upcoming</span>
+                        <a title="삼식이 삼촌 /  Samsiki Samchon / Uncle Sam Shik  Uncle Samsik (2024) |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2024</p>
+                              	<p><strong>Genre:</strong> Bromance, Business, Drama, Friendship, Historical, Military, Miniseries, Romance</p>
+                              	<p>&lt;p&gt;Set in 1960s South Korea, the series follows two men through their bromance and the obstacles they face during a turbulent time in the country’s history.&lt;/p&gt;
+&lt;p&gt;(Source: Deadline.com)&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Episodes:&lt;/span&gt; 10&lt;/p&gt;</p>
+                              </div>" href="/tv-series/uncle-samsik">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/uncle-samsik-1663726777.png" alt="Uncle Samsik (2024)" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/tv-series/uncle-samsik">Uncle Samsik (2024)</a>2024</h2>
+                    </li>
+                    <li>
+                        <span class="status">Upcoming</span>
+                        <a title="비밀은 없어 / 沒有秘密 / Bimileun Eobseo / There Is No Secret / No Secrets / Никаких секретов No Secret (2024) |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2024</p>
+                              	<p><strong>Genre:</strong> Business, Comedy, Drama, life, melodrama, Romance</p>
+                              	<p>&lt;p&gt;A childish and rude life-changing comic melodrama in which announcer Song Ki Baek meets passionate entertainment writer On Woo Joo.&lt;/p&gt;
+&lt;p&gt;(Source: HanCinema)&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Episodes:&lt;/span&gt; 12&lt;/p&gt;</p>
+                              </div>" href="/tv-series/no-secret-bimileun-eobseo">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/no-secret-bimileun-eobseo-1663727148.png" alt="No Secret (2024)" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/tv-series/no-secret-bimileun-eobseo">No Secret (2024)</a>2024</h2>
+                    </li>
+                    <li>
+                        <span class="status">Upcoming</span>
+                        <a title="커넥션 / Keoneksyeon Connection (2024) |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2024</p>
+                              	<p><strong>Genre:</strong> Crime, Thriller</p>
+                              	<p>A crime investigation thriller depicting the distorted friendship of friends who are revealed while tracking the death of a high school friend who died leaving behind 5 billion won in insurance money.</p>
+                              </div>" href="/kshow/-connection">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/-connection-1695372688.png" alt="Connection (2024)" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/kshow/-connection">Connection (2024)</a>2024</h2>
+                    </li>
+                    <li>
+                        <span class="status">Upcoming</span>
+                        <a title="우연일까? / Uyeonilkka? / Is It a Coincidence? Is It Fate? (2024) |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2024</p>
+                              	<p><strong>Genre:</strong> Drama, Romance, Workplace</p>
+                              	<p>&lt;p&gt;Lee Hong Ju is a single woman that works as an animation production PD. Due to a mental scar from a love she had in the past, she is afraid of falling in love again. One day,  she accidentally meets her first love Kang Hu Young for the first time in 10 years.&lt;/p&gt;
+&lt;p&gt;Adapted from the webtoon &quot;Uyeonilkka?&quot; (우연일까?) written by Nam Ji Eun (남지은) and illustrated by Kim In Ho (김인호).&lt;/p&gt;</p>
+                              </div>" href="/tv-series/is-it-fate">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/is-it-fate-1660020858.png" alt="Is It Fate? (2024)" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/tv-series/is-it-fate">Is It Fate? (2024)</a>2024</h2>
+                    </li>
+                    <li>
+                        <span class="status">Upcoming</span>
+                        <a title="착한 사나이 / Chakhan Sanai / Chaghan Sanai / Kind Gentleman The Good Man (2024) |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2024</p>
+                              	<p><strong>Genre:</strong> Drama, Family, Gangster, Romance, Suspense, Thriller</p>
+                              	<p>&lt;p&gt;A work that depicts with laughter and tears the tumultuous events that Seok Cheol, the eldest son of a three-generation gangster family, descends from to protect his family, work and love.&lt;/p&gt;
+&lt;p&gt;(Source: Korean = Naver)&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Aired On:&lt;/span&gt; Monday, Tuesday&lt;/p&gt;</p>
+                              </div>" href="/tv-series/the-good-man">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/the-good-man-1664781152.png" alt="The Good Man (2024)" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/tv-series/the-good-man">The Good Man (2024)</a>2024</h2>
+                    </li>
+                    <li>
+                        <span class="status">Upcoming</span>
+                        <a title="아무도 없는 숲속에서 / Amudo Eobsneun Supsokeseo / In the Forest With No One / In the Woods With No One Alone in the Woods (2024) |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2024</p>
+                              	<p><strong>Genre:</strong> Drama, Investigation, Miniseries, Mystery, Noir, Psychological, Suspense, Thriller, Web Series</p>
+                              	<p>&lt;p&gt;Tells the story of two men named Sang Joon, who was running a motel in a rural area during the summer of 2000, and Young Ha, who was running a pension alone in the forest during the summer of 2021.&lt;/p&gt;
+&lt;p&gt;(Source: Soompi)&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Episodes:&lt;/span&gt; 8&lt;/p&gt;</p>
+                              </div>" href="/tv-series/in-the-woods-with-no-one">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/in-the-woods-with-no-one-1667526190.png" alt="Alone in the Woods (2024)" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/tv-series/in-the-woods-with-no-one">Alone in the Woods (2024)</a>2024</h2>
+                    </li>
+                    <li>
+                        <span class="status">Upcoming</span>
+                        <a title="직필 / Jigpil / Handwriting  Handwritten (2024) |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2024</p>
+                              	<p><strong>Genre:</strong> Action, Amnesia, Drama, Hidden Identity, Historical, Investigation, Mystery, Novel, Suspense, Thriller</p>
+                              	<p>&lt;p&gt;The story revolve around Kwon Soo Young who lost his memory and gets involved in a power struggle. When everyone thought he is already dead, he returns and will try to find his true identity. &lt;/p&gt;
+&lt;p&gt;Adapted from the novel &quot;Jigpil&quot; (직필).&lt;/p&gt;</p>
+                              </div>" href="/tv-series/handwritten">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/handwritten-1667526509.png" alt="Handwritten (2024)" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/tv-series/handwritten">Handwritten (2024)</a>2024</h2>
+                    </li>
+                    <li>
+                        <span class="status">Upcoming</span>
+                        <a title="끝내주는 해결사 / 끝까지 간다 / 绝佳的解决士 / Kkeutnaejuneun Haegyeolsa / Kkeutkkaji Ganda / Great Problem Solver / A Hard Day / Persist Until the End / Going Until the End / Going to the End / I Will Go Until the End / Amazing Troubleshooter / Королева разводов / Удивительный специалист / ملكة الطلاق Queen of Divorce (2024) |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2024</p>
+                              	<p><strong>Genre:</strong> Action, Comedy, Drama, Law, Romance, Workplace</p>
+                              	<p>&lt;p&gt;Kim Sa Ra was the daughter-in-law of the biggest law firm in South Korea, but she was betrayed by her husband and lost everything. After that, she began working as a divorce troubleshooter. She is now the team leader at the divorce settlement office Solution. She punishes bad spouses and provides help for those who find themselves in unfair divorce situations.&lt;/p&gt;
+&lt;p&gt;She works with Dong Ki Joon. He is Sa Ra’s business partner and an advisory lawyer at Solution. Before coming to Solution, he was an excellent prosecutor who had the nickname of &quot;German Shepherd.&quot; He picked up the nickname because of his persistence and keen intuition, but Ki Joon left the prosecutors&#039; office for an unknown reason. Sa Ra and Ki Joon work together for people who are suffering through difficult divorces.&lt;/p&gt;
+&lt;p&gt;(Source: AsianWiki)&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Episodes:&lt;/span&gt; 12&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Content Rating:&lt;/span&gt; 15+ - Teens 15 or older&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Airs On:&lt;/span&gt; Wednesday, Thursday&lt;/p&gt;</p>
+                              </div>" href="/tv-series/persist-until-the-end">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/persist-until-the-end-1704961141.png" alt="Queen of Divorce (2024)" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/tv-series/persist-until-the-end">Queen of Divorce (2024)</a>2024</h2>
+                    </li>
+                    <li>
+                        <span class="status">Upcoming</span>
+                        <a title="커플팰리스 / Keopeul Paelriseu Couple Palace (2024) |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2024</p>
+                              	<p><strong>Genre:</strong> Reality Show, Variety</p>
+                              	<p>&lt;p&gt;Couple Palace&quot; is a real couple matching program. It contains the real stories of 100 single men and women heading toward marriage. The journey unfolds at &quot;Couple Palace&quot;, a collection of perfect ideal types in terms of appearance, economic power, and qualifications.&lt;/p&gt;
+&lt;p&gt;(Source: Korean = dispatch.co.kr)&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Episodes:&lt;/span&gt; 10&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Content Rating:&lt;/span&gt; 15+ - Teens 15 or older&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Airs On:&lt;/span&gt; Tuesday&lt;/p&gt;</p>
+                              </div>" href="/kshow/couple-palace">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/couple-palace-1703838596.png" alt="Couple Palace (2024)" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/kshow/couple-palace">Couple Palace (2024)</a>2024</h2>
+                    </li>
+                    <li>
+                        <span class="status">Ongoing</span>
+                        <a title=" Let&#039;s Play Soccer 3 (2023) |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2023</p>
+                              	<p><strong>Genre:</strong> Reality Show, Sports, Variety</p>
+                              	<p>Let&#039;s Play Soccer, sports legends&#039; morning soccer club, returns with the new season. In Season 3, Ahn Jung Hwan teams up with Park Hang Seo, the former assistant coach for the National Team 2002, to take on international matches, a new challenge for the Legend Football Club. Can they go beyond Korea and take on the world?</p>
+                              </div>" href="/kshow/lets-play-soccer-3-2023">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/lets-play-soccer-3-2023-1704918869.png" alt="Let's Play Soccer 3 (2023)" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/kshow/lets-play-soccer-3-2023">Let's Play Soccer 3 (2023)</a>2023</h2>
+                    </li>
+                    <li>
+                        <span class="status">Ongoing</span>
+                        <a title=" Meokjjibba: Big Survival |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2023</p>
+                              	<p><strong>Genre:</strong> Reality Show, Variety</p>
+                              	<p>Hunky celebrities, who love their bodies as themselves, start a battle for a chance to be a commercial model. The ten contestants make two teams of five and execute various missions while maintaining their weight without gaining or losing it. Who will emerge victorious among the former pro athletes, comedians, Youtubers, and idols?</p>
+                              </div>" href="/kshow/meokjjibba-big-survival">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/meokjjibba-big-survival-1704918988.png" alt="Meokjjibba: Big Survival" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/kshow/meokjjibba-big-survival">Meokjjibba: Big Survival</a>2023</h2>
+                    </li>
+                    <li>
+                        <span class="status">Ongoing</span>
+                        <a title=" Hallyustar |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2023</p>
+                              	<p><strong>Genre:</strong> Reality Show, Variety</p>
+                              	<p>A unique audition show finds the best senior model for promoting K-rural villages. Three young celebrities visit various towns to meet the grandpa and grandma to find the best model to promote their village on social media.</p>
+                              </div>" href="/kshow/hallyustar">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/hallyustar-1704926961.png" alt="Hallyustar" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/kshow/hallyustar">Hallyustar</a>2023</h2>
+                    </li>
+                    <li>
+                        <span class="status">Completed</span>
+                        <a title=" 2023 MBC Gayo Daejejeon |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2023</p>
+                              	<p><strong>Genre:</strong> Musical</p>
+                              	<p>MBC Gayo Daejejeon, also spelt Gayo Daejejun is a major annual end-of-the-year music program broadcast on 31 December by Munhwa Broadcasting Corporation (MBC).
+
+</p>
+                              </div>" href="/kshow/2023-mbc-gayo-daejejeon">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/2023-mbc-gayo-daejejeon-1704676799.png" alt="2023 MBC Gayo Daejejeon" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/kshow/2023-mbc-gayo-daejejeon">2023 MBC Gayo Daejejeon</a>2023</h2>
+                    </li>
+                    <li>
+                        <span class="status">Upcoming</span>
+                        <a title="나나투어-세븐틴 / 꽃보다 청춘 / 꽃보다 청춘 - 세븐틴 / Youth Over Flowers: Seventeen / Let&#039;s Go Together: Nana Tour With Seventeen Nana Tour with Seventeen (2024) |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2024</p>
+                              	<p><strong>Genre:</strong> Adventure, Comedy, Friendship</p>
+                              	<p>&lt;p&gt;Here comes the 7-day vacation full of laughter! Come enjoy Italy to the fullest! Follow the lead of Guide Na with SEVENTEEN, NANA TOUR with SEVENTEEN!&lt;/p&gt;
+&lt;p&gt;PD Na, a 20-year veteran of travel entertainment shows, got a new job as a tour guide and became Guide Na! He&#039;s the tour guide for SEVENTEEN, who&#039;s going on a vacation into the summer in Italy!&lt;/p&gt;
+&lt;p&gt;(Source: SEVENTEEN YouTube)&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Episodes:&lt;/span&gt; 6&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Duration:&lt;/span&gt; 60 min.&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Airs On:&lt;/span&gt; Friday&lt;/p&gt;</p>
+                              </div>" href="/kshow/nana-tour-with-seventeen">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/nana-tour-with-seventeen-1704179806.png" alt="Nana Tour with Seventeen (2024)" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/kshow/nana-tour-with-seventeen">Nana Tour with Seventeen (2024)</a>2024</h2>
+                    </li>
+                    <li>
+                        <span class="status">Ongoing</span>
+                        <a title="더 시즌즈 - 이효리의 레드카펫 / 더 시즌즈 4 - 이효리의 레드카펫 / 더 시즌즈 시즌 4: 이효리의 레드카펫 / Deo Sijeunjeu: Ihyoriui Redeukapet / The Seasons: Lee Hyo Ri&#039;s Red Carpet The Seasons Season 4: Lee Hyo Ri&#039;s Red Carpet (2024) |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2024</p>
+                              	<p><strong>Genre:</strong> Musical</p>
+                              	<p>&lt;p&gt;N/A&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Episodes:&lt;/span&gt; 10&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Content Rating:&lt;/span&gt; 15+ - Teens 15 or older&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Airs On:&lt;/span&gt; Friday&lt;/p&gt;</p>
+                              </div>" href="/kshow/the-seasons-season-4-lee-hyo-ris-red-carpet">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/the-seasons-season-4-lee-hyo-ris-red-carpet-1704357542.png" alt="The Seasons Season 4: Lee Hyo Ri's Red Carpet (2024)" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/kshow/the-seasons-season-4-lee-hyo-ris-red-carpet">The Seasons Season 4: Lee Hyo Ri's Red Carpet (2024)</a>2024</h2>
+                    </li>
+                    <li>
+                        <span class="status">Completed</span>
+                        <a title=" 2023 SBS Drama Awards |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 0</p>
+                              	<p><strong>Genre:</strong> Drama</p>
+                              	<p>The SBS Drama Awards (Hangul: SBS 연기대상) is an awards ceremony presented annually by Seoul Broadcasting System. Established in 1993, it honors the best performances on its network. The most prestigious award is the Grand Prize (&quot;Daesang&quot;). It is held every December 31.
+
+</p>
+                              </div>" href="/kshow/2023-sbs-drama-awards">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/2023-sbs-drama-awards-1704296083.png" alt="2023 SBS Drama Awards" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/kshow/2023-sbs-drama-awards">2023 SBS Drama Awards</a>0</h2>
+                    </li>
+                    <li>
+                        <span class="status">Completed</span>
+                        <a title=" 2023 KBS Drama Awards |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2023</p>
+                              	<p><strong>Genre:</strong> Drama</p>
+                              	<p>The KBS Drama Awards (Hangul: KBS 연기대상; RR: KBS Yeon-gi Daesang) is an awards ceremony presented by Korean Broadcasting System (KBS) for outstanding achievements in Korean dramas aired on its network. It is held annually on December 31. The highest honor of the ceremony is the &quot;Grand Prize&quot; (Hangul: 대상; RR: Daesang), awarded to the best actor or actress of the year.
+
+</p>
+                              </div>" href="/kshow/2023-kbs-drama-awards">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/2023-kbs-drama-awards-1704161440.png" alt="2023 KBS Drama Awards" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/kshow/2023-kbs-drama-awards">2023 KBS Drama Awards</a>2023</h2>
+                    </li>
+                    <li>
+                        <span class="status">Completed</span>
+                        <a title=" 2023 MBC Entertainment Awards |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2023</p>
+                              	<p><strong>Genre:</strong> Comedy, Drama</p>
+                              	<p>The MBC Entertainment Awards (Hangul: MBC 방송연예대상; hanja: -放送演藝大賞) is an awards ceremony held yearly and is sponsored by MBC. The awards ceremony is approximately 140 minutes long and is shown in two parts on MBC. This event is held at the end of each year.
+
+</p>
+                              </div>" href="/kshow/2023-mbc-entertainment-awards">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/2023-mbc-entertainment-awards-1704162016.png" alt="2023 MBC Entertainment Awards" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/kshow/2023-mbc-entertainment-awards">2023 MBC Entertainment Awards</a>2023</h2>
+                    </li>
+                    <li>
+                        <span class="status">Completed</span>
+                        <a title=" 2023 SBS Entertainment Awards |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2023</p>
+                              	<p><strong>Genre:</strong> Drama</p>
+                              	<p>The SBS Entertainment Awards (Hangul: SBS 연예대상; Hanja: -演藝大賞) is an awards ceremony held yearly, sponsored by Seoul Broadcasting System (SBS). The awards ceremony is approximately 140 minutes long and is shown in two parts on SBS. This event is held at the end of each year, and awards are given to the best entertainers in the industry. Since 2014, it is part of the SBS Awards Festival, along with SBS Gayo Daejeon and SBS Drama Awards. Since 2017, SAF Entertainment Award had been renamed back to SBS Entertainment Award.
+
+</p>
+                              </div>" href="/kshow/2023-sbs-entertainment-awards">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/2023-sbs-entertainment-awards-1704162052.png" alt="2023 SBS Entertainment Awards" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/kshow/2023-sbs-entertainment-awards">2023 SBS Entertainment Awards</a>2023</h2>
+                    </li>
+                    <li>
+                        <span class="status">Ongoing</span>
+                        <a title="789 Trainee ; 789 SURVIVAL 789 Survival (2023) |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2023</p>
+                              	<p><strong>Genre:</strong> Music</p>
+                              	<p>Twenty-four trainees mix and match in this survival competition aimed at selecting members of Sonray Music&#039;s first boy band. Tune in to see if seven, eight or nine trainees will debut in the end.</p>
+                              </div>" href="/kshow/789-survival-2023">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/789-survival-2023-1704058940.png" alt="789 Survival (2023)" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/kshow/789-survival-2023">789 Survival (2023)</a>2023</h2>
+                    </li>
+                    <li>
+                        <span class="status">Completed</span>
+                        <a title=" MBC Drama Awards (2023) |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2023</p>
+                              	<p><strong>Genre:</strong> Drama</p>
+                              	<p>The MBC Drama Awards (Hangul: MBC 연기대상) is an awards ceremony presented annually by Munhwa Broadcasting Corporation (MBC) for outstanding achievement in Korean dramas aired on its network. The ceremony is held at the end of the year. The most prestigious and the final award of the evening, is the Grand Prize, awarded to the best actor or actress of the year.
+
+</p>
+                              </div>" href="/kshow/mbc-drama-awards-2023">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/mbc-drama-awards-2023-1704118017.png" alt="MBC Drama Awards (2023)" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/kshow/mbc-drama-awards-2023">MBC Drama Awards (2023)</a>2023</h2>
+                    </li>
+                    <li>
+                        <span class="status">Upcoming</span>
+                        <a title="지배종 / 우점종 / Jibaejong / Dominion / Blood Free Dominant Species (2023) |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2023</p>
+                              	<p><strong>Genre:</strong> Business, Drama, Food, Sci-fi, Suspense, Thriller</p>
+                              	<p>&lt;p&gt;Ending millions of years of humans eating animal meat, BF now dominates the genetically engineered cultured meat market. There are people inside BF and outsiders who begin to have doubts about the path taken by BF CEO Yoon Ja-Yoo (Han Hyo-Joo). Yoon Ja-Yoo founded BF with On San (Lee Mu-Saeng), who has a Ph.D. in physiology.&lt;/p&gt;
+&lt;p&gt;Meanwhile, after graduation from the Naval Academy, Woo Chae-Woon (Ju Ji-Hoon) served in army, but he now works as a bodyguard.&lt;/p&gt;</p>
+                              </div>" href="/tv-series/dominant-species">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/dominant-species-1662693893.png" alt="Dominant Species (2023)" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/tv-series/dominant-species">Dominant Species (2023)</a>2023</h2>
+                    </li>
+                    <li>
+                        <span class="status">Ongoing</span>
+                        <a title="환승연애 시즌3 / 환승연애3 / 換乘戀愛 3 / Hwanseungyeonae 3 / Hwanseungyeonae Sijeun 3 / Romance Transfer Season 3 / Romance Transfer S3 / Romance Transfer 3 / Transfer Romance Season 3 / Transfer Romance S3 / Transfer Romance 3 / Transferring Love Season 3 / Transferring Love S3 / Transferring Love 3 / Transit Love Season 3 / Transit Love S3 / Transit Love 3 / EXchange S3 / EXchange 3 EXchange Season 3 (2023) |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2023</p>
+                              	<p><strong>Genre:</strong> Cohabitation, Friendship, life, Romance</p>
+                              	<p>&lt;p&gt;Four ex-couples live under one roof for three weeks to find love-new or re-visited. Knowing everyone’s ex is in the house, they must hide who that is by pretending to be strangers. While keeping that a secret, they try to get to know others and build new relationships throughout their stay. Through the EX-REVIEW and EX-CHAT systems, singles have opportunities to learn about their new date partners from the ex of that person. Will new relationships begin? Or do ex-couples rekindle their feelings?&lt;/p&gt;
+&lt;p&gt;(Source: CJ ENM)&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Episodes:&lt;/span&gt; 16&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Duration:&lt;/span&gt; 2 hr. 6 min.&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Aired On:&lt;/span&gt; Friday&lt;/p&gt;</p>
+                              </div>" href="/kshow/exchange-season-3">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/exchange-season-3-1704169832.png" alt="EXchange Season 3 (2023)" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/kshow/exchange-season-3">EXchange Season 3 (2023)</a>2023</h2>
+                    </li>
+                    <li>
+                        <span class="status">Completed</span>
+                        <a title=" KBS Entertainment Awards (2023) |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2023</p>
+                              	<p><strong>Genre:</strong> Survival, Variety show</p>
+                              	<p>The KBS Entertainment Awards is an event held yearly and is sponsored by KBS. The ceremony features performances by K-pop artists and music parodies from Gag Concert members.
+
+</p>
+                              </div>" href="/kshow/kbs-entertainment-awards-2023">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/kbs-entertainment-awards-2023-1703736154.png" alt="KBS Entertainment Awards (2023)" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/kshow/kbs-entertainment-awards-2023">KBS Entertainment Awards (2023)</a>2023</h2>
+                    </li>
+                    <li>
+                        <span class="status">Completed</span>
+                        <a title=" SBS Gayo Daejun (2023) |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2023</p>
+                              	<p><strong>Genre:</strong> Musical</p>
+                              	<p>SBS Year End special Concert where mixed groups and solo artists perform on stage
+
+</p>
+                              </div>" href="/kshow/sbs-gayo-daejun-2023">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/sbs-gayo-daejun-2023-1703736224.png" alt="SBS Gayo Daejun (2023)" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/kshow/sbs-gayo-daejun-2023">SBS Gayo Daejun (2023)</a>2023</h2>
+                    </li>
+                    <li>
+                        <span class="status">Ongoing</span>
+                        <a title="미스트롯 시즌3 / 미스트롯3 / 明日はミス・トロット3 / Miseu Teurot 3 / Miseu Teurot Sijeun 3 / Miss Trot S3 / Miss Trot 3 Miss Trot Season 3 (2023) |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2023</p>
+                              	<p><strong>Genre:</strong> Musical, Variety</p>
+                              	<p>&lt;p&gt;The trot syndrome starts again! Miss Trot is back with the strongest and most fierce season ever. Who will be the darling of the trot fans and become the next Miss Trot?&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Episodes:&lt;/span&gt; 12&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Duration:&lt;/span&gt; 2 hr. 30 min.&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Content Rating:&lt;/span&gt; 15+ - Teens 15 or older&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Aired On:&lt;/span&gt; Thursday&lt;/p&gt;</p>
+                              </div>" href="/kshow/miss-trot-3">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/miss-trot-3-1703815536.png" alt="Miss Trot Season 3 (2023)" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/kshow/miss-trot-3">Miss Trot Season 3 (2023)</a>2023</h2>
+                    </li>
+                    <li>
+                        <span class="status">Completed</span>
+                        <a title="방탄소년단 모뉴먼츠: 비욘드 더 스타 / Bangtansonyeondan Monyumeoncheu: Biyondeu Deo Seuta BTS Monuments: Beyond The Star (2023) |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2023</p>
+                              	<p><strong>Genre:</strong> Documentary, Musical</p>
+                              	<p>&lt;p&gt;The documentary captures the past, present, and future of BTS over the course of nearly 9-years, as well as interviews with each of the group&#039;s members on their thoughts moving forward with the second chapter of their careers.&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Episodes:&lt;/span&gt; 8&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Aired On:&lt;/span&gt; Wednesday&lt;/p&gt;</p>
+                              </div>" href="/kshow/bts-monuments-beyond-the-star-2023">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/bts-monuments-beyond-the-star-2023-1703918796.png" alt="BTS Monuments: Beyond The Star (2023)" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/kshow/bts-monuments-beyond-the-star-2023">BTS Monuments: Beyond The Star (2023)</a>2023</h2>
+                    </li>
+                    <li>
+                        <span class="status">Ongoing</span>
+                        <a title=" Iron Squad3 - Reunion (2023) |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2023</p>
+                              	<p><strong>Genre:</strong> Variety show</p>
+                              	<p>The 24 squad members are gathered again! Check out the fierce Iron Sports Day and behind stories with twists!
+
+</p>
+                              </div>" href="/kshow/iron-squad3-reunion-2023">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/iron-squad3-reunion-2023-1702566327.png" alt="Iron Squad3 - Reunion (2023)" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/kshow/iron-squad3-reunion-2023">Iron Squad3 - Reunion (2023)</a>2023</h2>
+                    </li>
+                    <li>
+                        <span class="status">Completed</span>
+                        <a title="솔로지옥 시즌3 / 單身即地獄 3 / 單身即地獄 第三季 / 脱出おひとり島 3 / Single’s Inferno S3 / Single’s Inferno 3 / Single&#039;s Inferno Season 3 / Single&#039;s Inferno S3 / Single&#039;s Inferno 3 / Infierno para solteros 3 / Raus aus der Single-Hölle 3 Single’s Inferno Season 3 (2023) |br|
+                    		  <div class='content'>
+                              	<p><strong>Release year:</strong> 2023</p>
+                              	<p><strong>Genre:</strong> Friendship, Romance</p>
+                              	<p>&lt;p&gt;Stranded and ready to mingle, flirty singles search for love on a deserted island they can only escape as couples for romantic date nights in paradise.&lt;/p&gt;
+
+</p>
+                              </div>" href="/kshow/singles-inferno-season-3">
+                            <div class="cover">
+                                <div class="pic">
+                                    <img src="https://asianimg.pro/cover/singles-inferno-season-3-1702448490.png" alt="Single’s Inferno Season 3 (2023)" />
+                                </div>
+                            </div>
+
+                        </a>
+                        <h2><a href="/kshow/singles-inferno-season-3">Single’s Inferno Season 3 (2023)</a>2023</h2>
+                    </li>
+                </ul>
+            </div>
+            <ul class='pagination non-ajax' ><li  class=selected><a href='?selOrder=&selCat=&selCountry=&selYear=&btnFilter=Submit&page=1' data-page='1'>1</a></li><li ><a href='?selOrder=&selCat=&selCountry=&selYear=&btnFilter=Submit&page=2' data-page='2'>2</a></li><li ><a href='?selOrder=&selCat=&selCountry=&selYear=&btnFilter=Submit&page=3' data-page='3'>3</a></li><li ><a href='?selOrder=&selCat=&selCountry=&selYear=&btnFilter=Submit&page=4' data-page='4'>4</a></li><li ><a href='?selOrder=&selCat=&selCountry=&selYear=&btnFilter=Submit&page=5' data-page='5'>5</a></li><li class='next'><a href='?selOrder=&selCat=&selCountry=&selYear=&btnFilter=Submit&page=2' data-page='2'>></a></li><li class='last'><a href='?selOrder=&selCat=&selCountry=&selYear=&btnFilter=Submit&page=235' data-page='1'>>></a></li></ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="content-line-2"></div>
+    <div class="col-right">
+        <div class="movie-rank top-view">
+            <ul>
+                <li><a class="m1 current" onclick="loadTopViews(this, 1)"><i class="icon-star"></i>TOP DAY</a></li>
+                <li><a class="m2" onclick="loadTopViews(this, 2)"><i class="icon-star"></i>TOP WEEK</a></li>
+                <li><a class="m3" onclick="loadTopViews(this, 3)"><i class="icon-star"></i>TOP MONTH</a></li>
+            </ul>
+            <div class="clear"></div>
+            <div id="sidebarlist-1"></div>
+            <div id="sidebarlist-2"></div>
+            <div id="sidebarlist-3"></div>
+        </div>
+        <div class="sound"><div class="av-right" style="margin-bottom:1px"></div></div>
+        <div id="bg_621226789"></div></div>
+    <div class="clear"></div>
+
+    <div class="clear"></div>
+    <div class="content-bottom">
+        <div class="content-line-bottom"></div>
+    </div>
+</div>
+<div id="footer">
+    <div class="wrapper">
+        <ul>
+            <li class="title">Pages</li>
+            <li><a title="thepiratebay" href="https://thepiratebays.com">Thepiratebay</a></li>
+            <li><a title="gogoanime" href="https://www.gogoanime.ma">gogoanime</a></li>
+            <li><a title="piratebay" href="https://thepiratebays.com">Piratebay</a></li>
+            <div class="clear"></div>
+        </ul>
+        <div class="address">
+            <p class="link"><a title="Top" rel="nofollow" href="#topbar">Back to Top</a></p>
+            We are a group that love to watch Drama and we want to share what we love with the whole world<br />
+            We hope that you like our website and enjoy your stay here<br />
+            MyAsianTv @ 2014
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="mask"></div>
+<script type="text/javascript" src="/js/hamfunction.js?v=4.0.1"></script>
+
+<!-- Google tag (gtag.js) -->
+
+<div style='    z-index:99999;position: fixed;bottom: 0;text-align: center;width: 100%; left: 0;padding: 10px;background: #9a3949;color: white;'>We moved to <a style='color:#000 !important;font-weight: bold !important;' title='Myasiantv' href='https://www6.myasiantv.tv'>Myasiantv.tv</a> , please bookmark new link. Thank you!</div><!--  -->
+<div style="display:none"><!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
+    <!-- Histats.com  START  (aync)-->
+    <script type="text/javascript">var _Hasync= _Hasync|| [];
+    _Hasync.push(['Histats.start', '1,4624290,4,511,95,18,00000000']);
+    _Hasync.push(['Histats.fasi', '1']);
+    _Hasync.push(['Histats.track_hits', '']);
+    (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+    })();</script>
+    <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4624290&101" alt="cool hit counter" border="0"></a></noscript>
+    <!-- Histats.com  END  --></div>
+<script type='text/javascript' src='//seedconsistedcheerful.com/dd/4a/cd/dd4acdab4ff89f0ea8603f1049ec828a.js'></script>
+<script type='text/javascript' src='//seedconsistedcheerful.com/d5/c4/e6/d5c4e6743ca909a24aa71f576f87745a.js'></script></body>
+</html>
